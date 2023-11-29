@@ -27,7 +27,9 @@ docker images
 
  ## to run the container out of the image
  docker tun -it --name name of the container -p port number image name
- ##exampe imagename is nginx and container name is c1 need to run on specific port 8000
+ 
+ example imagename is nginx and container name is c1 need to run on specific port 8000
+ 
  docker run -it --name c1 -p 8000:8000 nginx (-it indicates run in a interactive mode)
  you can use -d for detached mode.
 
@@ -55,12 +57,18 @@ docker images
   VOLUME
 
   # to push the image to your own dockerhub account
-  first you need to tag the image 
+  first you need to tag the image
+  
   docker tag name orginalimage name
-  for ex  i need to make ubuntu offical in my own name you can tag by giving your name'
+  
+  for ex  i need to make ubuntu offical in my own name you can tag by giving your name
+  
   docker tag ubuntu balaubuntu
+  
   after the tag the image is created on your own name
-  to push 
+  
+  to push
+  
   docker push balaubuntu.
 
   # to get a image from the running container.
