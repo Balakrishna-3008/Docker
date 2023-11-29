@@ -26,7 +26,7 @@ docker images
  docker pull imagename
 
  ## to run the container out of the image
- docker tun -it --name name of the container -p port number image name
+ docker run -it --name name of the container -p port number image name
  
  example imagename is nginx and container name is c1 need to run on specific port 8000
  
