@@ -27,8 +27,9 @@ docker images
 
  ## to run the container out of the image
  docker tun -it --name name of the container -p port number image name
- ##exampe imagename is nginx and container name is c1 i need to run on specific port 8000
- docker run -it --name c1 -p 8000:8000 nginx
+ ##exampe imagename is nginx and container name is c1 need to run on specific port 8000
+ docker run -it --name c1 -p 8000:8000 nginx (-it indicates run in a interactive mode)
+ you can use -d for detached mode.
 
  ## to check the list of running containers
  docker ps
@@ -61,4 +62,9 @@ docker images
   after the tag the image is created on your own name
   to push 
   docker push balaubuntu.
+
+  # to get a image from the running container.
+  docker commit conatinername newimagename
+  ex: conatiner is c8 and image is nginx:v2
+  docker commit c8 nginx:v2
 
