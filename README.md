@@ -8,7 +8,7 @@ sudo yum install docker -y
 
 ## to start the docker
 sudo systemctl start docker
-## to check docker is installe or not
+## to check docker is install or not
 docker --version
 
 ## to login to dockerhub account
@@ -61,7 +61,7 @@ docker images
   
   docker tag name orginalimage name
   
-  for ex  i need to make ubuntu offical in my own name you can tag by giving your name
+  for ex: i need to make ubuntu offical in my own name you can tag by giving your name
   
   docker tag ubuntu balaubuntu
   
@@ -75,4 +75,6 @@ docker images
   docker commit conatinername newimagename
   ex: conatiner is c8 and image is nginx:v2
   docker commit c8 nginx:v2
+
+  
 
